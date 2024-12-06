@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Transformations</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.transformations {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.transformations div {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+.translate:hover {
+    transform: translate(-600px, 300px);
+}
+
+.rotate:hover {
+    transform: rotate(180deg);
+}
+
+.scale:hover {
+    transform: scale(3);
+}
+
+.skew:hover {
+    transform: skew(20deg, 20deg);
+}
+
+.rotate3d:hover {
+    transform: rotate3d(1, 1, 0, 45deg);
+}
+    </style>
+</head>
+<body>
+    <h1>CSS3 2D & 3D Transformations</h1>
+    
+    <div class="transformations">
+        <div class="translate">Translate</div>
+        <div class="rotate">Rotate</div>
+        <div class="scale">Scale</div>
+        <div class="skew">Skew</div>
+        <div class="rotate3d">Rotate 3D</div>
+    </div>
+    
+</body>
+</html>

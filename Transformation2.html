@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square{
+               width:100px;
+               height: 100px;
+               background-color: yellow;
+               border:5px solid brown;
+               color:blue;
+               font-size: larger;
+               text-align: center;
+               margin: 100px;
+               padding: 50px;
+               transition: transform 1s;
+           }.square:hover{transform: scale(2);} /*2d transformation */
+
+           .droplet{
+               width:100px;
+               height: 100px;
+               background-color:mediumaquamarine;
+              /* border-radius:2% 10% 30% 20% ;  */
+              border-radius:2% 50% ;
+               margin: 100px;
+               transition: all 3s;
+               color:red;
+               padding: 10px;
+           }.droplet:hover{transform: rotateX(360deg);} /*3d transformation*/
+           .skew{
+               width:100px;
+               height: 100px;
+               background-color:pink;
+               margin: 100px;
+               padding: 50px;
+               transition: transform 1s;
+           }.skew:hover{transform: skewX(60deg);} /*3d transformation*/
+  #test{
+       width: 100px;
+       height: 100px;
+   }#test:hover{transform: translate(500px, 18px);}
+
+   h1{
+       border: 2px solid red;
+       background-color: mediumspringgreen;
+       border-radius: 40px 15px;
+       padding: 10px;
+       width: 300px;
+   }
+   </style>
+</head>
+<body>
+    <h1>The Scale() Method</h1>
+    <div class="square">Web Designing</div>
+    
+    <h1>The rotate() Method</h1>
+    <div class="droplet">Coforge</div>
+
+    <h1>The Skew() method</h1>
+    <div class="skew">CSS3</div>
+
+    <div id="test">
+        <img src="https://interactive-examples.mdn.mozilla.net/media/examples/firefox-logo.svg" alt="">
+    </div>
+    
+</body>
+</html>
